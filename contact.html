@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self' https://api.web3forms.com; form-action 'self' https://api.web3forms.com; base-uri 'self'; object-src 'none'; upgrade-insecure-requests" />
+  <title>Contact — Forged MX</title>
+  <meta name="description" content="Get in touch with Forged MX. Send your bike, your goals and the work you're after — we'll reply with a quote and timeline." />
+  <link rel="icon" type="image/png" href="assets/logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&family=Anton&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <header class="site-header" id="siteHeader">
+    <div class="nav-inner">
+      <a href="index.html#home" class="brand" aria-label="Forged MX home">
+        <img src="assets/logo.png" alt="Forged MX" class="brand-logo" />
+        <span class="brand-text">FORGED <span class="accent">MX</span></span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav" id="primaryNav">
+        <a href="index.html#home" class="nav-link">Home</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <div class="nav-item">
+          <button type="button" class="nav-link nav-dropdown-toggle" aria-haspopup="true" aria-expanded="false">Media <svg class="nav-chev" width="12" height="12" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+          <div class="nav-dropdown">
+            <a href="news.html">News &amp; Articles</a>
+            <a href="gallery.html">Media Gallery</a>
+          </div>
+        </div>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="contact.html" class="nav-link active">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-banner">
+      <div class="container">
+        <span class="eyebrow">Get In Touch</span>
+        <h1>Let's <span class="accent">Talk</span> Builds</h1>
+        <p>Tell us about your bike and the work you're after — we'll get back to you with a quote and a timeline.</p>
+      </div>
+    </section>
+
+    <section class="section contact">
+      <div class="container contact-inner">
+        <div class="contact-copy">
+          <span class="eyebrow">Reach Out</span>
+          <h2 class="section-title">Ready to <span class="accent">Build</span> Something Fast?</h2>
+          <p>Drop a message about your bike, your goals, and the work you're after. Whether it's a quick oil change, a full 2-stroke engine rebuild, or race-day prep — we'll point you in the right direction with honest pricing and a realistic turnaround.</p>
+
+          <ul class="contact-list">
+            <li><span class="contact-label">Shop</span> Available by appointment</li>
+            <li><span class="contact-label">Hours</span> By arrangement — including race weekends</li>
+            <li><span class="contact-label">Email</span> <a href="mailto:Forgedmotocross@gmail.com">Forgedmotocross@gmail.com</a></li>
+            <li><span class="contact-label">Instagram</span> <a href="https://www.instagram.com/forgedmotocross?igsh=MTltcXNrbzFoeXd4cw==" target="_blank" rel="noopener">@forgedmotocross</a></li>
+            <li><span class="contact-label">TikTok</span> <a href="https://www.tiktok.com/@hciejwbahaikem?_r=1&_t=ZP-976RESUcUpT" target="_blank" rel="noopener">@forgedmotocross</a></li>
+          </ul>
+
+          <p class="contact-note">Most messages get a reply within 24 hours. The more detail you give on your bike and what it's doing, the faster we can quote it.</p>
+        </div>
+
+        <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+          <input type="hidden" name="access_key" value="b11b4b4a-4209-4ceb-b7fc-22f4474f0d32" />
+          <input type="hidden" name="subject" value="New message from the Forged MX website" />
+          <input type="hidden" name="submitted_at" />
+          <input type="checkbox" name="botcheck" class="hp-field" tabindex="-1" autocomplete="off" />
+          <label>
+            <span>Name</span>
+            <input type="text" name="name" required placeholder="Your name" />
+          </label>
+          <label>
+            <span>Email</span>
+            <input type="email" name="email" required placeholder="you@email.com" />
+          </label>
+          <label>
+            <span>Bike / Year</span>
+            <input type="text" name="bike" placeholder="e.g. 2023 YZ250F" />
+          </label>
+          <label>
+            <span>What do you need?</span>
+            <select name="service" required>
+              <option value="" disabled selected>Select a category…</option>
+              <option>Engine</option>
+              <option>Suspension</option>
+              <option>Linkage / Steering Stem / Swingarm</option>
+              <option>Carburetor</option>
+              <option>Electrical</option>
+              <option>Maintenance</option>
+              <option>Other</option>
+            </select>
+          </label>
+          <label>
+            <span>Describe what's going on</span>
+            <textarea name="message" rows="4" required placeholder="Tell us what the bike's doing and what you're after — the more detail, the faster we can help."></textarea>
+          </label>
+          <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+          <p class="form-success" hidden>Thanks — we'll be in touch shortly.</p>
+          <p class="form-error" hidden>Something went wrong — please email us directly at <a href="mailto:Forgedmotocross@gmail.com">Forgedmotocross@gmail.com</a>.</p>
+        </form>
+      </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section class="section how-it-works">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">What To Expect</span>
+          <h2 class="section-title">How It <span class="accent">Works</span></h2>
+          <p class="section-sub">Simple, honest, and quick — from first message to back on the track.</p>
+        </div>
+
+        <div class="services-grid">
+          <article class="service-card">
+            <div class="service-num">01</div>
+            <h3>Reach Out</h3>
+            <p>Send a message with your bike, what it's doing, and the work you're after. Photos help.</p>
+          </article>
+          <article class="service-card">
+            <div class="service-num">02</div>
+            <h3>Get a Quote</h3>
+            <p>We'll reply with straight pricing and a realistic timeline — no surprises, no pressure.</p>
+          </article>
+          <article class="service-card">
+            <div class="service-num">03</div>
+            <h3>Drop It Off</h3>
+            <p>Bring the bike by, we do the work with the attention to detail it deserves, and you ride dialed.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <img src="assets/logo.png" alt="Forged MX" class="footer-logo" />
+        <p>Motocross Mechanic.<br/>Engineered to ride. Forged to win.</p>
+      </div>
+
+      <div class="footer-cols">
+        <div>
+          <h4>Site</h4>
+          <a href="index.html#home">Home</a>
+          <a href="services.html">Services</a>
+          <a href="index.html#media">Media</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div>
+          <h4>Media</h4>
+          <a href="news.html">News &amp; Articles</a>
+          <a href="gallery.html">Gallery</a>
+        </div>
+        <div>
+          <h4>Follow</h4>
+          <a href="https://www.instagram.com/forgedmotocross?igsh=MTltcXNrbzFoeXd4cw==" target="_blank" rel="noopener">Instagram</a>
+          <a href="https://www.tiktok.com/@hciejwbahaikem?_r=1&_t=ZP-976RESUcUpT" target="_blank" rel="noopener">TikTok</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; <span id="year"></span> Forged MX. All rights reserved.</span>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

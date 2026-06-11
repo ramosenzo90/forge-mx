@@ -1,0 +1,14 @@
+# Local tooling / editor config — never publish
+.claude/
+
+# OS / system files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs & temp
+*.log
+*.tmp
+
+# Dependency dirs (not used, but safe to ignore)
+node_modules/

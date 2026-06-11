@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self' https://api.web3forms.com; form-action 'self' https://api.web3forms.com; base-uri 'self'; object-src 'none'; upgrade-insecure-requests" />
+  <title>Jetting for Altitude &amp; Temperature — Forged MX</title>
+  <meta name="description" content="Why your carbureted dirt bike bogs at altitude or in the cold, and how the main jet, pilot and needle affect the mixture." />
+  <link rel="icon" type="image/png" href="../assets/logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&family=Anton&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+<body>
+
+  <header class="site-header" id="siteHeader">
+    <div class="nav-inner">
+      <a href="../index.html#home" class="brand" aria-label="Forged MX home">
+        <img src="../assets/logo.png" alt="Forged MX" class="brand-logo" />
+        <span class="brand-text">FORGED <span class="accent">MX</span></span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav" id="primaryNav">
+        <a href="../index.html#home" class="nav-link">Home</a>
+        <a href="../services.html" class="nav-link">Services</a>
+        <div class="nav-item">
+          <button type="button" class="nav-link nav-dropdown-toggle active" aria-haspopup="true" aria-expanded="false">Media <svg class="nav-chev" width="12" height="12" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+          <div class="nav-dropdown">
+            <a href="../news.html">News &amp; Articles</a>
+            <a href="../gallery.html">Media Gallery</a>
+          </div>
+        </div>
+        <a href="../about.html" class="nav-link">About</a>
+        <a href="../contact.html" class="nav-link">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <article class="section">
+      <div class="container container-narrow">
+        <a href="../index.html#media" class="article-back">← Back to News &amp; Articles</a>
+        <span class="article-card-tag">Engine</span>
+        <h1 class="article-title">Jetting for Altitude &amp; Temperature</h1>
+        <p class="article-meta">Engine · 7 min read · Apr 21, 2026</p>
+
+        <div class="article-body">
+          <p>If your carbureted bike runs great at home but bogs, sputters, or feels flat at a different track, jetting is usually why. Air density changes with altitude, temperature, and humidity — and the carb meters fuel against a fixed assumption about that air.</p>
+
+          <h2>The Core Idea</h2>
+          <p>Carbs mix fuel with air at a set ratio. <strong>Denser air</strong> (cold, low elevation, dry) needs more fuel — richer. <strong>Thinner air</strong> (hot, high elevation, humid) needs less fuel — leaner. When the air changes and the jetting doesn't, the mixture goes off and the bike runs poorly.</p>
+
+          <h2>The Circuits</h2>
+          <ul>
+            <li><strong>Pilot/idle jet:</strong> controls idle and the first bit of throttle. Symptoms here: hard idle, hanging idle, off-idle bog.</li>
+            <li><strong>Needle (clip position):</strong> controls the midrange, roughly 1/4–3/4 throttle. Raising or lowering the clip leans or richens this zone.</li>
+            <li><strong>Main jet:</strong> controls wide-open, top-end power.</li>
+            <li><strong>Air/fuel screw:</strong> fine-tunes the idle mixture.</li>
+          </ul>
+
+          <h2>Reading the Symptoms</h2>
+          <ul>
+            <li><strong>Too rich:</strong> bog, blubbering, sputtering, sooty/black plug, lots of smoke, fouling.</li>
+            <li><strong>Too lean:</strong> hanging idle, popping on deceleration, hesitation, a hot or surging feel, whitish plug. Lean is dangerous — it runs hot and can damage the engine.</li>
+          </ul>
+
+          <h2>Altitude &amp; Temperature Rules of Thumb</h2>
+          <p>Going <strong>up</strong> in elevation or into <strong>hotter</strong> weather generally means going <strong>leaner</strong> on jetting (smaller jets). Coming down to sea level or into cold air means going <strong>richer</strong> (larger jets). Jetting charts and calculators give a starting point based on your baseline and the new conditions.</p>
+
+          <h2>Change One Thing at a Time</h2>
+          <p>Read the plug, make a single change, and test. Chasing several variables at once just hides what's actually happening. Note your good baseline settings so you can always get back to a known-good starting point.</p>
+        </div>
+
+        <div class="article-cta">
+          <h3>Bogging or Fouling?</h3>
+          <p>Forged MX cleans, rebuilds and dials in carbs so your bike runs crisp wherever you ride.</p>
+          <a href="../services.html" class="btn btn-primary">View Services</a>
+        </div>
+      </div>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-bottom">
+      <span>&copy; <span id="year"></span> Forged MX. All rights reserved.</span>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
