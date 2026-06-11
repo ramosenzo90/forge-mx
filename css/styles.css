@@ -1372,13 +1372,15 @@ a { color: inherit; text-decoration: none; }
     position: fixed;
     top: calc(var(--header-h) + env(safe-area-inset-top, 0px));
     left: 0; right: 0;
-    background: rgba(10,10,10,0.97);
+    bottom: 0;
+    background: rgba(10,10,10,0.98);
     backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     flex-direction: column;
     align-items: stretch;
     gap: 0;
-    padding: 16px 24px 24px;
-    border-bottom: 1px solid var(--line);
+    padding: 8px 24px calc(24px + env(safe-area-inset-bottom, 0px));
+    overflow-y: auto;
     transform: translateY(-110%);
     transition: transform .3s var(--ease);
   }
