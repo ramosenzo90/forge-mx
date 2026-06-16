@@ -1352,9 +1352,9 @@ a { color: inherit; text-decoration: none; }
   .services-grid { grid-template-columns: 1fr; }
   .media-grid {
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 180px 180px 180px;
+    grid-template-rows: 200px 200px 200px;
   }
-  .media-tile-lg { grid-row: span 1; grid-column: span 2; height: 220px; }
+  .media-tile-lg { grid-row: auto; grid-column: 1 / -1; height: auto; }
   .contact-inner { grid-template-columns: 1fr; gap: 40px; }
   .footer-inner { grid-template-columns: 1fr; gap: 32px; }
   .footer-cols { grid-template-columns: repeat(3, 1fr); }
@@ -1373,9 +1373,7 @@ a { color: inherit; text-decoration: none; }
     top: calc(var(--header-h) + env(safe-area-inset-top, 0px));
     left: 0; right: 0;
     bottom: 0;
-    background: rgba(10,10,10,0.98);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+    background: var(--bg);
     flex-direction: column;
     align-items: stretch;
     gap: 0;
@@ -1432,6 +1430,8 @@ a { color: inherit; text-decoration: none; }
   .footer-cols { grid-template-columns: 1fr; }
   .values-grid { grid-template-columns: 1fr; }
   .article-grid { grid-template-columns: 1fr; }
+  .media-grid { grid-template-columns: 1fr; grid-template-rows: none; grid-auto-rows: 200px; }
+  .media-tile-lg { grid-column: auto; height: auto; }
   .collage { grid-template-columns: repeat(2, 1fr); grid-auto-rows: 130px; }
   .social-card { flex-wrap: wrap; gap: 12px 18px; }
   .social-cta { width: 100%; }
