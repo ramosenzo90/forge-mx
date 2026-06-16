@@ -78,6 +78,8 @@ a { color: inherit; text-decoration: none; }
   display: flex;
   align-items: center;
   gap: 10px;
+  position: relative;
+  z-index: 60; /* keep logo above the full-screen mobile menu */
 }
 .brand-logo {
   width: 42px;
@@ -132,6 +134,8 @@ a { color: inherit; text-decoration: none; }
   justify-content: center;
   gap: 5px;
   cursor: pointer;
+  position: relative;
+  z-index: 60; /* stay above the full-screen mobile menu (z-index 40) */
 }
 .nav-toggle span {
   display: block;
