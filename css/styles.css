@@ -1379,10 +1379,11 @@ a { color: inherit; text-decoration: none; }
     gap: 0;
     padding: 8px 24px calc(24px + env(safe-area-inset-bottom, 0px));
     overflow-y: auto;
-    transform: translateY(-110%);
-    transition: transform .3s var(--ease);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .25s var(--ease), visibility .25s var(--ease);
   }
-  .nav.open { transform: translateY(0); }
+  .nav.open { opacity: 1; visibility: visible; }
   .nav-link {
     padding: 14px 0;
     border-bottom: 1px solid var(--line);
